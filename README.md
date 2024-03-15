@@ -179,6 +179,10 @@ support : **in, >, <**
     $post = $post->where('id','<',1)
     $post = $post->whereIn('id',[1,2,3,4])
     
+sort
+    $post = $post->where('id','>',1)->sort('id','asc');
+
+
 raw query
 
     $post = $post->rawQuery('FT.SEARCH',...$param);
