@@ -1,0 +1,32 @@
+{
+    "name": "ken/redisjsonmodel",
+    "description": "Laravel redis model",
+    "type": "package",
+    "authors": [
+        {
+            "name": "cannv",
+            "email": "ngovancanbn@gmail.com"
+        }
+    ],
+    "autoload": {
+        "psr-4": {
+            "Ken\\": "src"
+        }
+    },
+    "require": {
+        "php": "^8.1",
+        "ext-json": "*",
+        "mkorkmaz/redislabs-rejson": "*@dev"
+    },
+    "require-dev": {
+
+    },
+
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Ken\\Providers\\BaseProviderService"
+            ]
+        }
+    }
+}
